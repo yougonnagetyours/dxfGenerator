@@ -8,7 +8,7 @@ d.addLayer('l_yellow', Drawing.ACI.YELLOW, 'CONTINUOUS')
  .drawCircle(0, 0, 25);
 
 d.addLayer('l_green', Drawing.ACI.GREEN, 'CONTINUOUS')
- .setActiveLayer('l_yellow')
- .drawArc(50, 50, 50, 30, 90);
+ .setActiveLayer('l_green')
+ .drawArc(50, 50, 50, 0, 90);
 
 fs.writeFileSync(__filename + '.dxf', d.toDxfString());
