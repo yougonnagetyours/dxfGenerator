@@ -93,16 +93,6 @@ l_yellow
 6
 CONTINUOUS
 0
-LAYER
-70
-64
-2
-l_green
-62
-3
-6
-CONTINUOUS
-0
 ENDTAB
 0
 ENDSEC
@@ -125,7 +115,7 @@ l_yellow
 0
 ARC
 8
-l_green
+l_yellow
 10
 50
 20
