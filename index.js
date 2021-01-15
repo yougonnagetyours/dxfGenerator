@@ -3,9 +3,12 @@ const fs = require('fs');
 
 let d = new Drawing();
 
-d.addLayer('l_yellow', Drawing.ACI.YELLOW, 'CONTINUOUS')
- .setActiveLayer('l_yellow')
- .drawCircle(0, 0, 25)
- .drawArc(50, 50, 50, 0, 90);
+d.addLayer('geometry', Drawing.ACI.WHITE, 'CONTINUOUS')
+ .setActiveLayer('geometry')
+ .drawArc(0, 0, 5, 0, 90);
+
+d.addLayer('geometry', Drawing.ACI.WHITE, 'CONTINUOUS')
+ .setActiveLayer('geometry')
+ .drawLine(50, 50, 50, 50);
 
 fs.writeFileSync(__filename + '.dxf', d.toDxfString());
